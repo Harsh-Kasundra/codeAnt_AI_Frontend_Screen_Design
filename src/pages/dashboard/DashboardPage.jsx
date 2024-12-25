@@ -11,9 +11,13 @@ const DashboardPage = () => {
   };
   return (
     <div className="xl:grid xl:grid-cols-12 h-screen">
+      {/* // Computer Screen Navbar starts */}
       <div className="col-span-2 border-r border-[#E9EAEB] hidden xl:flex">
         <NavBar />
       </div>
+      {/* //computer screen Navbar ends */}
+      {/* //mobile screen nabbar starts */}
+      {/* // logo/name + Toggle Button */}
       <div className="flex flex-col xl:hidden">
         <div className="p-4">
           <div className="flex justify-between items-center w-full">
@@ -40,8 +44,10 @@ const DashboardPage = () => {
             )}
           </div>
         </div>
+        {/* // All the navigation buttons */}
         <MobileNavBar value={value} />
       </div>
+      {/* //mobile screen nabbar ends */}
       <div className="col-span-10 bg-[#FAFAFA] xl:p-6">
         <div className="bg-[#ffffff] h-full w-full border border-[#E9EAEB] xl:rounded-xl shadow-custom2 ">
           <div className="border-b border-[#D5D7DA]">

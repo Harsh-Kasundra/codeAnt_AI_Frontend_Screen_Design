@@ -5,7 +5,7 @@ const MobileNavBar = ({ value }) => {
     <div>
       {value && (
         <div className="w-screen p-4 ">
-          {/* Nav Header Starts */}
+          {/* Dropdown */}
           <div className="flex flex-col gap-5 items-start w-full">
             <div className="flex justify-between items-center gap-2 w-full h-[40px] px-3 py-2 pr-4 border border-[#D5D7DA] rounded-lg shadow-custom2">
               <div className="overflow-hidden whitespace-nowrap text-ellipsis truncate">
@@ -26,8 +26,7 @@ const MobileNavBar = ({ value }) => {
               </svg>
             </div>
           </div>
-          {/* Nav Header Ends */}
-          {/* Nav Navigation starts */}
+          {/* Nav Navigation Button */}
           <div className="flex flex-col gap-2 items-start mt-5 w-full">
             <div className="text-[#414651] text-base font-semibold flex flex-col w-full">
               <div className="flex gap-2 py-2 px-1 hover:cursor-pointer hover:bg-[#eaf1fa] rounded-lg">
@@ -65,7 +64,6 @@ const MobileNavBar = ({ value }) => {
               </div>
             </div>
           </div>
-          {/* Nav Navigation Ends */}
         </div>
       )}
     </div>
